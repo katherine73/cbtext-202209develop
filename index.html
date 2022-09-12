@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>CSS - Text</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Développer un site web en PHP, MySQL, JavaScript, CSS3 & HTML5<b>
+                Approche littéraire avec des exemples et des petites histoires
+            </h1>
+            <p>
+                Les exemples <span>Opérateurs logiques</span>
+            </p>
+            <ul>
+                <li>
+                    Si vous ne les avez jamais utilisés auparavant, les opérateurs logiques peuveut vous sembler
+                    un peu déconcertants. Mais ils apparaissent vite plus clairs lorqu'il ne s'agit en fait que
+                    d'exprimer de la logique en français et de la transposer en anglais. Ainsi, vous vous dites
+                    que "si il est plus tard que midi et plus tôt que 14 heures, alors je vais manger" pour
+                    exprimer ceci en PHP, il suffit d'une instruction.
+
+                </li>
+                <li>
+                    un opérateur logique permet de combiner les
+                    résultats de deux opérateurs de comparaison, tels que ceux de la section précédente. Un
+                    opérateur logique peut aussi servir d'entrée à un autre opérateur : "si il est plus tard que
+                    midi et plus tôt que 14 heures, ou si une odeur de rôti envahit le couloir et les assittes sont
+                    déjà sur la table." La règle veut que, si quelque chose a une valeur vraie (TRUE) ou fausse
+                    (FALSE), ce quelque chose peut servir d'entrée dans un opérateur logique. Un opérateur
+                    logique ne peut prendre qu'une parmi deux valeurs, vrai ou faux, et produit un résultat vrai
+                    ou faux.
+                </li>
+                <LI>
+                    Il est nécessaire
+                    dans certains cas d'ajouter des parenthèse pour imposer la préséance requise. En revanche
+                    dans certains cas précis, seuls and ou or sont permis (l'opérateur ne peut en effet 
+                    obliger la seconde partie de l'instruction à s'exécuter si la première échoue).
+                </LI>
+                <LI>
+                    Le plus inhabituel parmi ces opérateurs est xor, qui signifie ou exlusif. Il renvoie la valeur
+                    vraie (TRUE) si seulement une des valeurs comparées est vraie, mais faux (FALSE) si les deux 
+                    valeurs comparées sont simultanément TRUE ou si elles sont simultanément FALSE. Pour
+                    comprendre à quoi sert le xor, imaginez que vous décidez de préparer votre propre
+                    nettoyant pour ustensiles ménagers. L'ammoniac est un bon nettoyant, de même que l'eau 
+                    de javel, donc vous sélectionnez l'un d'eux dans votre potion nettoyante. Mais votre potion
+                    ne peut contenir les deux car leur mélange présente un danger. Pour exprimer ceci en PHP, 
+                    vous écrivez : <br>
+                    $ingredient = $ammoniac xor $javel
+                    <br>
+                    Dans cette exemple, si $ammoniac ou $javel est TRUE, $ingredient devient TRUE, Mais s'ils 
+                    sont tous les deux TRUE, ou tous les deux FALSE, alors $ingredient devient FALSE.
+                    
+                </LI>
+                <br>
+                <LI>"Pour conduire je dois avoir le permis ET être agé de 18 ans",
+                    <br>
+                    "J'ai le permis, je ne suis pas agé de 18 ans, je ne peux pas conduire",
+                    <br>
+                    "Je n'ai pas le permis, je ne suis pas agé de 18 ans, je ne peux pas conduire",
+                    <br>
+                    "Je n'ai pas le permis, je suis agé de plus de 18 ans, je ne peux pas conduire".
+
+                </LI>
+
+            </ul>
+
+            <p>
+                Affectation de variable <span>incrémentation et décrémentation de variable</span> 
+            </p>
+            <ul>
+                <li>
+                    L'ajout de 1 (l'incrémentation) et la soustraction de 1 (décrémentation) à une variable 
+                    sont des opérations d'une telle fréquence que PHP fournit des opérateurs spéciaux
+                    pour cela. 
+                    <br>
+                    Si vous combinez cela par exemple à un test,
+                    le fait qu'une variable soit incrémentée ou décrémentée avant ou après le
+                    test dépend de l'emplacement de l'opérateur d'incrémentation ou décrémentation :
+                    avant ou après la variable.
+                    <br>
+                <li>
+            </ul>
+            <p>
+                Affectation de variable (autre exemple) <span>Concaténation de chaînes</span> 
+            </p>
+            <ul>
+                <li>
+                    Concaténer est un mot ancien qui signifie placer quelque chose à la suite de l'autre
+                    chose pour constituer une chaine. On ne pouvait pas mieux choisir ce terme. Ainsi,
+                    "concaténer des chaines de caractères" signifie les placer bout à bout. L'opérateur
+                    point (.) permet d'ajouter une chaine à la fin d'une autre.
+                    <br>
+                    Par exemple si $journal contient des informations sur des actualités et $nouvelle_breve une 
+                    nouvelle information brève d'actualité, et la commande ajoute cette dernière à la fin de la 
+                    première, de sorte que $journal contient désormais les deux chaines de texte en une seule.
+                </li>
+                <li>
+                    "En philosophie, la théorie de la concaténation universelle est étudiée pour comprendre 
+                    que la construction de la dialectique et de la logique dépend 
+                    de phénomènes et de pensées connectés qui ne se produisent jamais de manière isolée."
+                </li>
+            </ul>
+
+           <p>
+            Les constantes<span>-Les constantes prédéfinies</span> 
+
+        </p>
+        <ul>
+            <li>
+                Les constantes ressemblent à des vaiables, car elles contiennent des informations
+                auxquelles vous accédez par la suite. Leur seule différence par rapport aux variables est 
+                représentée par leur appellation : elles sont constantes. En d'autres termes, dès que vous 
+                les définissez avec une valeur, celle ci demure invariable jusqu'à la fin du programme.
+                <br>
+                Un exemple d'utilisation d'une constante réside dans la mémorisation de l'emplacement
+                de la racine (root) de votre serveur, c'est à dire le dossier qui contient les fichiers 
+                principaux de votre site web.
+
+                
+            </li>
+            <li>
+                Vous ne devez pas préfixer les constantes du symbole dollard ($), au contraire des autres
+                variables et que vous ne pouvez les définir qu'à l'aide de la fonction définie.
+
+                <br>
+                (Lorsque vous devrez executer votre code PHP sur un autre serveur dont le
+                dossier racine diffère, vous n'aurez plus qu'une seule ligne de code à corriger).
+
+                <br>
+                il est généralement conseillé de n'utiliser que des caractères en capitales pour nommer
+                les constantes, surtout si d'autres personnes doivent aussi lire votre code.
+
+                <br>
+                <br>
+                CONSTANTES PREDEFINIES
+                <br>
+                PHP prédéfinit des dizaines de constantes auxquelles vous n'accédez généralement pas en
+                tant que débutant en programmation PHP. Cependant, quelques-unes parmi elles, 
+                appelées constantes magiques, peuvent vous être utliles. Les noms de ces constantes
+                magiques possèdent deux caractères de soulignement à leur début et à leur fin, pour 
+                éviter que vous ne nommiez accidentellement une de vos constantes avec un nom déjà 
+                pris.
+
+            </li>
+        </ul>
+
+
+            <p class="baleine">🐳</p>
+            <p>
+                <a
+                    href="https://developer.mozilla.org/fr/docs/Learn/CSS/Styling_text/Fundamentals"
+                >
+                    Doc mozilla! k.Brunet sept 2022
+                </a>
+            </p>
+        </div>
+    </body>
+</html>
